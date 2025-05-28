@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f72991ad2.js" crossorigin="anonymous"></script>
+    <title>Coding-Challenge-4</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-navigation-container">
+            <div class="logo-container"> <i class="fa-solid fa-truck-fast"></i> </div>
+            <div class="nav-block">
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Purchase</a>
+                    <a href="">Featured</a>
+                    <a href="">Contact Us</a>
+                </nav>
+            </div>
+            <div class="search-bar-buttons">
+                <div>
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" id="search-bar" name="searchbar" value=" search.." >
+                </div>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-question"></i>
+                </div>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <section class="image-text">
+        <div class="simple-image">
+            <img src="Images/Lorry-travel.jpg" alt="fast truck on dirt road">
+        </div>
+        <div class="text-container">
+            <h4>Quick Lorries</h4>
+            <h5>If it can be got there, we will get it there</h5>
+            <div id="spacer"></div>
+            <p>
+                At <em>Quick Lorries</em>, we pride ourselves on delivering unparalleled logistics solutions tailored to
+                meet the unique needs of our clients. Our team of seasoned professionals ensures that every shipment is
+                handled with the utmost care and precision, from start to finish. With state-of-the-art technology and a
+                commitment to excellence, we provide real-time tracking, efficient route planning, and seamless
+                coordination, ensuring your goods arrive on time, every time.
+
+                Our customer-centric approach sets us apart from the competition. We understand that each client has
+                specific requirements, and we go above and beyond to offer personalised service and support. Whether
+                you’re a small business or a large corporation, we offer flexible and scalable solutions to meet your
+                logistics needs. Trust <em>Quick Lorries</em>to be your reliable partner in navigating the complexities
+                of supply chain management, delivering exceptional service and peace of mind.
+            </p>
+            <div id="spacer"></div>
+            <button>Read More</button>
+        </div>
+    </section>
+    <div id="spacer"></div>
+    <section class="main-contact-form">
+        <div class="heading-contact-form">
+            <h4>Like What You See?</h4>
+            <button onclick="hideShow()">Get In Touch</button>
+            <div id="spacer"></div>
+        </div>
+        <form id="lrg-contact-form" action="form-handler.php" method="post">
+            <div id="contact-form-container">
+                <div class="contact-form-col">
+                    <label for="topic">Select a Topic</label>
+                    <select name="topic" id="topic-dropdown">
+                        <option value="select">Select an option</option>
+                        <option value="Enquiry about order">Enquiry about order</option>
+                        <option value="Send Praise">Send Praise</option>
+                        <option value="Send Complaint">Send Complaint</option>
+                        <option value="Enquire about Purchase">Enquire about Purchase</option>
+                    </select>
+                    <label for="message">Your Message</label>
+                    <textarea id="lrg-text-input"  name="message" rows="4"  cols="50" form="mini-contact">Type Your Message Here.</textarea>
+                </div>
+                <div class="contact-form-col">
+                    <label for="fristname">First Name</label>
+                    <input type="text" id="fristname" name="fristname" value="Eddie">
+                    <label for="lastname">Full Name</label>
+                    <input type="text" id="lastname" name="lastname" value="Stobart">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" value="example@test.com">
+                </div>
+            </div>
+            <br>
+            <input class="submit-button" type="submit" value="submit">
+        </form>
+    </section>
+
+    <footer>
+        <div class="mini-footer">
+            <nav>
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Purchase</a>
+                <a href="">Featured</a>
+                <a href="">Contact Us</a>
+            </nav>
+            <div class="footer-contact">
+                <div class="contact-details">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <span>001 3568 1738</span>
+                    </div>
+                </div>
+                <div  class="contact-details">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>   
+                        <span>info@quicklorries.co.uk</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-declaration">
+                <span>Copyright <em>Quick Lorries</em> &copy; 2024 All Rights Reserved  </span>
+            </div>
+        </div>
+    </footer>
+
+ <script>
+    function hideShow() {
+        var formDisplay = document.getElementById("lrg-contact-form");
+        // var formBg = document.getElementById("lrg-contact-form::before");
+        if (formDisplay.style.display === "none") {
+            formDisplay.style.display = "flex";
+            // formBg.style.display = "block";
+        } else {
+            formDisplay.style.display = "none";
+            // formBg.style.display = "none";
+        }
+    }
+ </script>
+
+</body>
+
+</html>

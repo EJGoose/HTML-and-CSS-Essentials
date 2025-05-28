@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge-9</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9f72991ad2.js" crossorigin="anonymous"></script>
+        <!-- Debugging tool -->
+        <!-- <style> 
+            *{
+                background-color: rgba(128, 255, 0, 0.29);
+            }
+        </style> -->
+
+    </head>
+
+
+    <body class="m-0 p-0" style="background-image: url('../Challenges/Images/map.jpg'); width: 100vw; height: 100vh;">
+        <div class="d-flex">
+        <!-- left hand nav bar -->
+            <div class="bg-light-subtle shadow d-none d-lg-flex flex-column align-items-center" style="width: 5rem; height: 100vh; z-index: 0;">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list m-2 mt-4" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-bookmark m-3 mb-1" viewBox="0 0 16 16">
+                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                        </svg>
+                        <p class="text-secondary mt-0" style="font-size: 0.6rem;">Saved</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-clock-history m-3 mb-1" viewBox="0 0 16 16">
+                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
+                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
+                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <p class="text-secondary mt-0" style="font-size: 0.6rem;" >Recents</p>
+                    </div>
+                    <hr class="w-50">
+                    <div class="d-flex flex-column align-content-center text-center">
+                        <div class="mb-2">
+                            <img src="https://picsum.photos/id/28/30" class="rounded border border-2 border-light ms-1" style="position: relative; z-index: 2;" alt="a generic stock photo">
+                            <img src="https://picsum.photos/30" class="rounded" style="margin-left: -1.8rem; margin-top: 0.7rem; position: relative; " alt="a generic stock photo">
+                            <p class="text-light mb-0" style="position:relative; margin-left: 1rem; margin-top: -1.7rem; z-index: 3; font-size: 0.8rem; font-weight: bold;">3</p>
+                            <span class="text-secondary" style="font-size: 0.6rem;">Santorini</span>
+                        </div>
+                        <div class="mb-2">
+                            <img src="https://picsum.photos/id/32/30" class="rounded border border-2 border-light ms-1" style="position: relative; z-index: 2;" alt="a generic stock photo">
+                            <img src="https://picsum.photos/30" class="rounded" style="margin-left: -1.8rem; margin-top: 0.7rem; position: relative; " alt="a generic stock photo">
+                            <p class="text-light mb-0" style="position:relative; margin-left: 0.6rem; margin-top: -1.7rem; z-index: 3; font-size: 0.8rem; font-weight: bold;">11</p>
+                            <span class="text-secondary" style="font-size: 0.6rem;">Kyoto</span>
+                        </div>
+                        <div class="mb-2">
+                            <img src="https://picsum.photos/id/63/30" class="rounded border border-2 border-light ms-1" style="position: relative; z-index: 2;" alt="a generic stock photo">
+                            <img src="https://picsum.photos/30" class="rounded" style="margin-left: -1.8rem; margin-top: 0.7rem; position: relative; " alt="a generic stock photo">
+                            <p class="text-light mb-0" style="position:relative; margin-left: 1rem; margin-top: -1.7rem; z-index: 3; font-size: 0.8rem; font-weight: bold;">3</p>
+                            <span class="text-secondary" style="font-size: 0.6rem;">Machu Pichu</span>
+                        </div>
+                        <div class="mb-2">
+                            <img src="https://picsum.photos/id/84/30" class="rounded border border-2 border-light ms-1" style="position: relative; z-index: 2;" alt="a generic stock photo">
+                            <img src="https://picsum.photos/30" class="rounded" style="margin-left: -1.8rem; margin-top: 0.7rem; position: relative; " alt="a generic stock photo">
+                            <p class="text-light mb-0" style="position:relative; margin-left: 1rem; margin-top: -1.7rem; z-index: 3; font-size: 0.8rem; font-weight: bold;">2</p>
+                            <span class="text-secondary" style="font-size: 0.6rem;">Petra</span>
+                        </div>
+                        <div class="mb-2">
+                            <img src="https://picsum.photos/id/95/30" class="rounded border border-2 border-light ms-1" style="position: relative; z-index: 2;" alt="a generic stock photo">
+                            <img src="https://picsum.photos/30" class="rounded" style="margin-left: -1.8rem; margin-top: 0.7rem; position: relative; " alt="a generic stock photo">
+                            <p class="text-light mb-0" style="position:relative; margin-left: 0.6rem; margin-top: -1.7rem; z-index: 3; font-size: 0.8rem; font-weight: bold;">10</p>
+                            <span class="text-secondary" style="font-size: 0.6rem;">Cappadocia</span>
+                        </div>
+                        <div class="mb-2">
+                            <img src="https://picsum.photos/id/37/30" class="rounded border border-2 border-light ms-1" style="position: relative; z-index: 2;" alt="a generic stock photo">
+                            <img src="https://picsum.photos/30" class="rounded" style="margin-left: -1.8rem; margin-top: 0.7rem; position: relative; " alt="a generic stock photo">
+                            <p class="text-light mb-0" style="position:relative; margin-left: 1rem; margin-top: -1.7rem; z-index: 3; font-size: 0.8rem; font-weight: bold;">3</p>
+                            <span class="text-secondary" style="font-size: 0.6rem;">Queenstown</span>
+                        </div>
+                        <div class="mb-2">
+                            <img src="https://picsum.photos/id/17/30" class="rounded border border-2 border-light ms-1" style="position: relative; z-index: 2;" alt="a generic stock photo">
+                            <img src="https://picsum.photos/30" class="rounded" style="margin-left: -1.8rem; margin-top: 0.7rem; position: relative; " alt="a generic stock photo">
+                            <p class="text-light mb-0" style="position:relative; margin-left: 1rem; margin-top: -1.7rem; z-index: 3; font-size: 0.8rem; font-weight: bold;">2</p>
+                            <span class="text-secondary" style="font-size: 0.6rem;">Jersey</span>
+                        </div>
+                        <div class="mb-2">
+                            <img src="https://picsum.photos/id/98/30" class="rounded border border-2 border-light ms-1" style="position: relative; z-index: 2;" alt="a generic stock photo">
+                            <img src="https://picsum.photos/30" class="rounded" style="margin-left: -1.8rem; margin-top: 0.7rem; position: relative; " alt="a generic stock photo">
+                            <span class="text-secondary mt-2" style="font-size: 0.6rem;">Kyrgystan</span>
+                        </div>
+                    </div>
+            </div>
+            <!-- Search Bar and top buttons-->
+            <div class="m-3 me-xl-0 mt-5 mt-sm-3 w-100 container-fluid d-flex align-items-start align-items-lg-center flex-column flex-lg-row" style="height: fit-content;">
+                    <form class="mt-4 mt-sm-1 d-flex flex-nowrap bg-light rounded-pill shadow mb-1 align-content-center" style="min-width: 20rem;" role="search">
+                        <span class="d-lg-none d-flex ms-2 mt-2"><i class="bi bi-list"></i></span>
+                        <input class="form-control me-2 pe-5 ps-3 p-2 bg-transparent border-0" type="search" placeholder="Search Google Maps" aria-label="Search">
+                        <button class="btn btn-outline-none" type="search" style="position: relative; z-index: 2; margin-left: -6rem;"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-outline-none" type="dircetions"><i class="bi bi-sign-turn-right-fill text-primary"></i></button>
+                    </form> 
+                    <div class="d-block">
+                        <button class="btn btn-light shadow rounded-pill ms-1 ms-xl-4 me-auto h-75" style="font-size: 0.8rem;"><i class="fa-solid fa-utensils"></i> Restaurant</button>
+                        <button class="btn btn-light shadow rounded-pill me-auto h-75" style="font-size: 0.8rem;"><i class="fa-solid fa-bed"></i> Hotels</button>
+                        <button class="btn btn-light shadow rounded-pill me-auto h-75" style="font-size: 0.8rem;"><i class="bi bi-camera"></i> Things to do</button>
+                        <button class="btn btn-light shadow rounded-pill me-auto h-75 d-none d-lg-inline" style="font-size: 0.8rem;"><i class="bi bi-camera"></i> Museums</button>
+                        <button class="btn btn-light shadow rounded-pill me-auto h-75 d-none d-lg-inline" style="font-size: 0.8rem;"><i class="bi bi-train-front"></i> Transport</button>
+                        <button class="btn btn-light shadow rounded-pill me-auto h-75 d-none d-xl-inline" style="font-size: 0.8rem;"><i class="fa-solid fa-prescription-bottle-medical"></i> Chemists</button>
+                        <button class="btn btn-light shadow rounded-pill h-75 d-none d-xl-inline" style="font-size: 0.8rem;"><i class="bi bi-cash"></i> ATMS</button>
+                    </div>
+            </div>
+            <div class="position-absolute m-3 me-lg-1 ms-lg-0 d-flex justify-content-end align-items-center z-2" style="height: fit-content; right: 1rem; top: 0.4rem;">
+                    <span class="me-2 opacity-75" style="font-size: 1.3rem;"><i class="bi bi-grid-3x3-gap-fill"></i></span>
+                    <img src="https://picsum.photos/id/64/40?grayscale" class="rounded-circle shadow" alt="a generic stock photo">
+            </div>
+        </div>
+
+        <div class="d-flex flex-row position-absolute ms-0 ms-lg-5 mb-5 mb-sm-1" style="height: fit-content; left: 2.5rem; bottom: 1rem;">
+            <img src="https://picsum.photos/id/33/80" class="rounded shadow border border-2 border-light" alt="a generic stock photo">
+            <span class="text-light" style="margin-left: -4.8rem; margin-top: 3.5rem;"><i class="bi bi-layers-half"></i> Layers</span>
+        </div>
+
+        <div class="position-absolute mb-5 m-sm-1 d-flex flex-column align-items-end p-2 mb-2 gap-1" style="right: 0.5rem; bottom: 1rem;">
+            <div class="d-flex flex-column" style="width: fit-content;">
+                <button class="btn btn-light shadow rounded" style="width: fit-content;"><i class="bi bi-crosshair text-primary m-0"></i></button>
+            </div>  
+            <div class="bg-light rounded d-flex flex-column shadow justify-content-center" style="width: fit-content;" >
+                <button class="btn btn-light rounded" style="width: fit-content; height: fit-content;"><i class="bi bi-plus-lg"></i></button>
+                <hr class="mx-auto p-0 m-0 w-75">
+                <button class="btn btn-light rounded" style="width: fit-content;"><i class="bi bi-dash-lg"></i></button>
+            </div>
+            <div class="bg-light rounded d-flex shadow align-items-baseline" style="width: fit-content;">
+                <button class="btn btn-light shadow rounded"><i class="bi bi-person-standing text-warning"></i></button>
+                <span>|</span>
+                <button class="btn btn-light rounded">
+                    <img src="https://picsum.photos/id/33/14" alt="a generic stock photo">
+                    <img src="https://picsum.photos/id/34/14" alt="a generic stock photo">
+                    <img src="https://picsum.photos/id/35/14" alt="a generic stock photo">
+                </button> 
+                <button class="btn btn-light rounded"><i class="fa-solid fa-angles-up"></i></button>
+            </div>        
+        </div>
+        <div class="d-flex justify-content-end position-absolute" style="bottom: 0; right: 0;">
+            <span class="bg-primary-subtle fw-light ps-2 pe-2" style="font-size: 0.8rem; height: fit-content;">Map data &copy;2024 Google, INEGI     United Kingdom    Terms     Privacy  Send product feedback    1000km <sub>|</sub>_____<sub>|</sub> </span>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

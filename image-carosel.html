@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .slide-show-container {
+                padding: 2rem;
+            }
+            .slider-wrapper {
+                position: relative;
+                min-width: 48rem;
+                margin: 0 auto; 
+            }
+            .slider {
+                display: flex;
+                aspect-ratio: 16 / 9;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+                border-radius: 0.5rem;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .slider::-webkit-scrollbar {
+                display: none;
+            }
+
+            .slider img {
+                flex: 1 0 100%;
+                scroll-snap-align: start;
+                object-fit: cover;
+            }
+
+            .slider-nav {
+                display: flex;
+                column-gap: 1rem;
+                position: absolute;
+                bottom: 1.25rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+            .slider-nav a {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: #fff;
+                opacity: 0.75;
+                transition: opacity ease 250ms;
+            }
+
+            .slider-nav a:hover {
+                opacity: 1;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <section class="slide-show-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="https://images.pexels.com/photos/4604442/pexels-photo-4604442.jpeg?auto=compress&cs=tinysrgb&w=600" alt="tug boat pulls large ship into port"/>
+                    <img id="slide-2" src="https://images.pexels.com/photos/586087/pexels-photo-586087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rocket blasts off into space"/>
+                    <img id="slide-3" src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Idylic wooden hut high up on a hillside covered in green paddy fields"/>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

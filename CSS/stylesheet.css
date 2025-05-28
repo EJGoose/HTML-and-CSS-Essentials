@@ -1,0 +1,302 @@
+body {
+   display: flex;
+   justify-content: center; 
+   background-color: rgb(42, 50, 50);
+   font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 80%;
+    min-width: 300px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: lemonchiffon;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+header {
+    position: absolute;
+    width: 80%;
+    min-width: 300px;
+    background-color: lemonchiffon;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    outline: chocolate solid 1px;
+    box-shadow: 2px 2px 5px rgba(26, 31, 31, 0.197);
+}
+
+h1 {
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.044);
+    border: none;
+    outline: chocolate solid 1px;
+    border-radius: 10%;
+    margin: 5px;
+    padding: 4px 6px;
+    height: fit-content;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0); 
+    outline-offset: 2px;
+    cursor: pointer;
+} 
+
+table {
+    border: 2px solid chocolate;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+} 
+
+td {
+    border: 2px solid chocolate;
+    padding: 2px 5px;
+    margin: 4px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 0.75rem;
+}
+
+.padding {
+    padding: 5px;
+}
+
+.character-bio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.profile-image {
+    box-shadow: 0 0 5px rgba(27, 31, 31, 0.433);
+    border-radius: 25%;
+    outline: chocolate solid 1px;
+}
+
+.name-and-edit-button {
+    display: flex;
+    align-items: center;
+}
+
+.character-name {
+    margin-right: 5px;
+    margin-bottom: 1px;
+}
+
+.edit-button {
+    margin-bottom: 1px;
+}
+
+.character-details {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 0.75rem;
+    font-weight: light;
+}
+
+.status-effect {
+    width: 30%;
+    min-width: 30px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    padding: 6px 16px;
+    color: rgb(47, 24, 7);
+    width: 100%;
+}
+
+.dropdown .effects {
+    display: none;
+    position: absolute;
+    background-color: rgb(195, 191, 154);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.264);
+    padding: 10px 5px;
+}
+
+.dropdown:hover .effects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.effects a:hover {
+    background-color: rgb(230, 223, 159);
+}
+
+.sidebar-container {
+    margin: 20px 10px;
+    padding: 10px;
+    outline: chocolate solid 1px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 180px;
+
+}
+
+.ability-score-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    width: 160px;
+}
+
+.ability-score-detail {
+    border: 2px solid chocolate;
+    height: 146px;
+    width: 63px;
+}
+
+.ability-score-detail button {
+    padding: 10px;
+    font-size: large;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 248, 184);
+    cursor: pointer;
+}
+
+.skills button {
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;   
+    background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+}
+
+.skills table{
+    border: none;
+    width:100px;
+}
+
+.key-character-details {
+    margin: 20px 10px;
+    min-width: 30%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.shield {
+    width: 100px; /* Adjust as needed */
+    height: 120px; /* Adjust as needed */
+    background-color: chocolate; /* Your desired shield color */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shield::before {
+    content: "";
+    position: absolute;
+    width: 90px; /* Adjust as needed */
+    height: 110px; /* Adjust as needed */
+    background-color: rgb(248, 239, 163); /* Your desired shield color */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.armour-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100px;
+    position: absolute;
+    margin-top: -105px;
+}
+
+.armour-class h3, .secondary-stat h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline;
+}
+
+.secondary-stat {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid chocolate;
+}
+.secondary-stat button {
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.secondary-stat span {
+    margin-left: 5px;
+}
+
+.action-details {
+    margin: 20px 0px;
+    display: flex;
+
+}
+.action-details button {
+    margin-bottom: 20px;
+    padding: 15px 4px;
+    width: 80px;
+    text-align: center;
+}
+
+.secondary-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.research-section {
+    display: block;
+}
+
+
+.more-details-section {
+    width: 45%;
+    outline: chocolate solid 2px;
+}
+
+.more-details-section li, .more-details-section h3 {
+    display: flex;
+    flex-direction: row;
+}

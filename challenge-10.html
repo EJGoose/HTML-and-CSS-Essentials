@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f72991ad2.js" crossorigin="anonymous"></script>
+    <title>Coding-Challenge-10</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="slideshow-header">
+            <div class="logo-navigation-container">
+                <div class="logo-container"> <i class="fa-solid fa-truck-fast"></i></div>
+                <div class="nav-block">
+                    <nav>
+                        <a href="">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">Purchase</a>
+                        <a href="">Featured</a>
+                        <a href="">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="hero-text-slideshow">
+                <button class="arrow-button" aria-label ="Navigate to previous image"><span>&lt;</span></button>  <!--Currently just for looks as I don't know how to use this yet -->
+                <div class="hero-text">
+                    <h2>Quick Lorries</h2>
+                    <p class="p-subheading">Logical Logistics</p>
+                </div>
+                <div></div>
+                <button class="arrow-button" aria-label ="Navigate to next image"><span>&gt;</span></button> <!--Currently just for looks as I don't know how to use this yet -->
+            </div>
+        </div>
+
+        <div class="slide-show-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="Images/transport.jpg" alt="The Inside of a Quick Lorries Delivery Truck Cabin"/>
+                    <img id="slide-2" src="Images/ship.jpg" alt="A ship being loaded with containers at port from above"/>
+                    <img id="slide-3" src="Images/shutle.jpg" alt="Space shuttle blasts off"/>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1" aria-label ="Navigate to Background Image 1"></a>
+                    <a href="#slide-2" aria-label ="Navigate to Background Image 2"></a>
+                    <a href="#slide-3" aria-label ="Navigate to Background Image 3"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <Main class="main-body-content">
+        <section class="image-text">
+            <div class="simple-image">
+                <img src="Images/Lorry-travel.jpg" alt="fast truck on dirt road">
+            </div>
+            <div class="text-container">
+                <h1>Quick Lorries</h1>
+                <p class="p-subheading">If it can be got there, we will get it there</p>
+                <div id="spacer"></div>
+                <p>
+                    At <em>Quick Lorries</em>, we pride ourselves on delivering unparalleled logistics solutions tailored to
+                    meet the unique needs of our clients. Our team of seasoned professionals ensures that every shipment is
+                    handled with the utmost care and precision, from start to finish. With state-of-the-art technology and a
+                    commitment to excellence, we provide real-time tracking, efficient route planning, and seamless
+                    coordination, ensuring your goods arrive on time, every time.
+
+                    Our customer-centric approach sets us apart from the competition. We understand that each client has
+                    specific requirements, and we go above and beyond to offer personalised service and support. Whether
+                    you’re a small business or a large corporation, we offer flexible and scalable solutions to meet your
+                    logistics needs. Trust <em>Quick Lorries</em>to be your reliable partner in navigating the complexities
+                    of supply chain management, delivering exceptional service and peace of mind.
+                </p>
+                <div id="spacer"></div>
+                <button>Read More</button>
+            </div>
+        </section>
+        <div id="spacer"></div>
+        <section class="success-stories">
+            <div>
+                <h2>Our Customers</h2>
+                <p class="p-subheading"> all of them happy </p>
+                <div id="spacer"></div>
+            </div>
+            <div>
+                <div id="gallery">
+                    <div class="figure-container">
+                        <figure>
+                            <img src="https://corporate.marksandspencer.com/sites/marksandspencer/files/styles/desktop/public/03-2024/MandS_Logo_Masterbrand_Primary_Blk_RGB.jpg?itok=xKrORok1" alt="M and S logo written in black" title="Marks and Spencer"/>
+                            <figcaption>M&amp;S</figcaption>
+                        </figure>
+                    </div>
+                    <div class="figure-container">
+                        <figure>
+                            <img src="https://www.kinder.com/uk/brands/kinder/themes/custom/kinder_theme/logo.svg?t=1723809029" alt="Kinder Logo in Heart" title="Kinder"/>
+                            <figcaption>Kinder</figcaption>
+                        </figure>
+                    </div>
+                    <div class="figure-container">
+
+                        <figure>
+                            <img src="https://images.crowdspring.com/blog/wp-content/uploads/2022/09/07052909/62bc70073fd3864405fe0551_starbucks-logo-1992-2011.png" alt="Starbucks Logo" title="Starbucks"/>
+                            <figcaption>Starbucks</figcaption>
+                        </figure>
+                    </div>
+                    <div class="figure-container">
+                        <figure>
+                            <img src="https://media.4rgos.it/i/Argos/logo_argos2x?w=120&h=103&qlt=75&fmt=webp" alt="Red square with argos written on it" title="Argos"/>
+                            <figcaption>Argos</figcaption>
+                        </figure>
+                    </div>
+                    <div class="figure-container">
+                        <figure>
+                            <img src="https://fathippo.co.uk/images/logo-fat-hippo.svg" alt="Fat hippo written in black text on a white hippo" title="Fat Hippo"/>
+                            <figcaption>Fat Hippo</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </Main>
+    <footer id="multilayer-footer">
+        <div class="large-footer">
+            <div class="footer-contact-form">
+                <h2>Contact Us</h2>
+                <p class="p-subheading">send us a message</p>
+                <form id="mini-contact" action="form-handler.php" method="post">
+                    <br>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" value="Eddie Stobart">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" value="example@test.com">
+                    <label for="message">Your Message</label>
+                    <textarea id="lrg-text-input"  name="message" rows="4"  cols="50" form="mini-contact">Type Your Message Here.</textarea>
+                    <br>
+                    <input class="submit-button" type="submit" value="submit">
+                </form>
+            </div>
+            <div class="footer-nav">
+                <h2>Sitemap</h2>
+                <p class="p-subheading">all our pages</p>
+                <br>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Purchase</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </div>
+            <section class="footer-logo">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <div class="contact-details">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <span>001 3568 1738</span>
+                        </div>
+                    </div>
+                    <div  class="contact-details">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span>info@quicklorries.co.uk</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="copyright-declaration">
+            <span>Copyright <em>Quick Lorries</em> &copy; 2024 All Rights Reserved  </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
